@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+      <form method="post" action="result">
+        {% csrf_token %}
+          <h4>Introduzca el Nombre del Empleado al que va a cambiar su salario con el nuevo salario:</h4>
+          Emp_no: <input type="text" name="txtEmpno" /><br/><br/>
+	      New_Salario: <input type="text" name="txtNewSalario" /><br/><br/>
+          <input type="submit" value="Ver Datos">
+    </form>
+
+</body>
+</html>
